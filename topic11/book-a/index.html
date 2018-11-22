@@ -1,23 +1,27 @@
-
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"/>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
+        type="text/css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+        rel="stylesheet"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <style>
     
 
@@ -63,190 +67,154 @@ h3 {
 
 
   </style>
+</head>
 
-  <body class="lab">
+<body>
 
+
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
     
-  <div class="uk-offcanvas-content">
-    <div id="offcanvas-usage" uk-offcanvas>
-      <div class="uk-offcanvas-bar">
-        <button class="uk-offcanvas-close" type="button" uk-close></button>
-        <ul class="uk-nav">
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic01/book-a/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-00
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic01/book-b/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-01
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic02/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-02
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic03/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-03
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic04/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-04
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic05/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-05
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic06/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-06
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic07/book-a/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-07-a
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic07/book-b/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-07-b
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic08/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-08
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic09/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-09
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic10/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-10
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic11/book-a/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-11
-                </a>
-              </li>
-            
-          
-        </ul>
-      </div>
-    </div>
+      <a href="../index.html"> Semantic-UI Part II  </a>
+    
+  </header>
+  <div class="right tab-menu menu">
+    
+      <a class="item" data-tab="Lab-11">
+        Lab-11
+      </a>
+    
+      <a class="item" data-tab="01">
+        01
+      </a>
+    
+      <a class="item" data-tab="02">
+        02
+      </a>
+    
+      <a class="item" data-tab="03">
+        03
+      </a>
+    
+      <a class="item" data-tab="04">
+        04
+      </a>
+    
+      <a class="item" data-tab="05">
+        05
+      </a>
+    
+      <a class="item" data-tab="06">
+        06
+      </a>
+    
+      <a class="item" data-tab="07">
+        07
+      </a>
+    
+      <a class="item" data-tab="08">
+        08
+      </a>
+    
+      <a class="item" data-tab="09">
+        09
+      </a>
+    
+      <a class="item" data-tab="10">
+        10
+      </a>
+    
+      <a class="item" data-tab="Exercises">
+        Exercises
+      </a>
+    
   </div>
+</div>
 
-
-    <div uk-sticky>
-      <nav class="uk-navbar">
-        <div class="uk-navbar-left">
-          <ul class="uk-subnav uk-background-secondary uk-subnav-pill">
-            <li><a href="#offcanvas-usage" uk-icon="icon: menu" , uk-toggle title="Switch Lab" pos="bottom"
-                   uk-tooltip></a></li>
-            <li class="uk-active"><a href="../index.html" uk-icon="icon: chevron-up" uk-toggle title="Parent Topic"
-                                     pos="bottom" uk-tooltip>Semantic-UI Part II </a></li>
-          </ul>
-        </div>
-        <div class="uk-navbar-right">
-          <ul class="uk-subnav uk-background-secondary uk-subnav-pill"
-              uk-switcher="connect: .switcher-container">
-            
-              <li><a href="#">Lab-11</a></li>
-            
-              <li><a href="#">01</a></li>
-            
-              <li><a href="#">02</a></li>
-            
-              <li><a href="#">03</a></li>
-            
-              <li><a href="#">04</a></li>
-            
-              <li><a href="#">05</a></li>
-            
-              <li><a href="#">06</a></li>
-            
-              <li><a href="#">07</a></li>
-            
-              <li><a href="#">08</a></li>
-            
-              <li><a href="#">09</a></li>
-            
-              <li><a href="#">10</a></li>
-            
-              <li><a href="#">Exercises</a></li>
-            
-          </ul>
-        </div>
-      </nav>
-    </div>
-
-    <div class="uk-container uk-container-expand">
-      <ul class="uk-switcher switcher-container">
-        
-          <li> <h1>Objectives</h1>
+<div class="ui pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    <br><br>
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic01/book-a/index.html">Lab-00 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic01/book-b/index.html">Lab-01 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic02/book/index.html">Lab-02 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic03/book/index.html">Lab-03 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic04/book/index.html">Lab-04 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic05/book/index.html">Lab-05 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic06/book/index.html">Lab-06 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic07/book-a/index.html">Lab-07-a </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic07/book-b/index.html">Lab-07-b </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic08/book/index.html">Lab-08 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic09/book/index.html">Lab-09 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic10/book/index.html">Lab-10 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic11/book-a/index.html">Lab-11 </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment">
+      <br>
+      
+        <div class="ui tab segment lab" data-tab="Lab-11">
+          <h1>Objectives</h1>
 <p>Continue to enhance the IoT web site with additional Semantic-UI styles &amp; Components</p>
-</li>
-        
-          <li> <h1>Setup</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="01">
+          <h1>Setup</h1>
 <p>This lab assumes you have completed the last lab - an archive of the completed project can be found here:</p>
 <ul>
 <li><a href="https://github.com/wit-computing/iot-web-ejs/releases/tag/V13">https://github.com/wit-computing/iot-web-ejs/releases/tag/V13</a></li>
@@ -255,9 +223,11 @@ Lab-11
 <p><img src="img/04.png" alt=""></p>
 <p>This lab will enhance the site to look like this:</p>
 <p><img src="img/03.png" alt=""></p>
-</li>
-        
-          <li> <h1>Icons</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="02">
+          <h1>Icons</h1>
 <p>We left the footer from last week looking like this:</p>
 <p><img src="img/01.png" alt=""></p>
 <p>with the task of making it look like this:</p>
@@ -280,9 +250,11 @@ Lab-11
   &lt;a href=&quot;href=&#39;http://twitter.com/ComputingAtWIT&quot;&gt; &lt;i class=&quot;large twitter icon&quot;&gt;&lt;/i&gt; &lt;/a&gt;
   &lt;a href=&quot;href=&#39;http://www.linkedin.com/pub/computing-at-wit&quot;&gt;  &lt;i class=&quot;large linkedin icon&quot;&gt;&lt;/i&gt; &lt;/a&gt;
 &lt;/footer&gt;</code></pre>
-</li>
-        
-          <li> <h1>Background colours</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="03">
+          <h1>Background colours</h1>
 <p>We will make the curriculum a little more eye catching but introducing some colour into each of the columns.</p>
 <p>The framework defines a set of colours we can use:</p>
 <p><img src="img/06.png" alt=""></p>
@@ -337,9 +309,11 @@ Lab-11
   &lt;/section&gt;
 ...</code></pre>
 <p><img src="img/08.png" alt=""></p>
-</li>
-        
-          <li> <h1>Icons</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="04">
+          <h1>Icons</h1>
 <p>We have already seen how to integrate icons into our site in step 2 (twitter, facebook and linkedin). </p>
 <p>We can also enhance other aspects of the site using icons - perhaps as a visual cue or aid, or also a a prompt for navigability:</p>
 <p><img src="img/09.png" alt=""></p>
@@ -510,9 +484,11 @@ Lab-11
 
 &lt;/section&gt;</code></pre>
 <p><img src="img/11.png" alt=""></p>
-</li>
-        
-          <li> <h1>Padding, Raised and Stacked Segments</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="05">
+          <h1>Padding, Raised and Stacked Segments</h1>
 <p>The range of options available for the <code>segment</code> class is worth exploring in detail:</p>
 <ul>
 <li><a href="http://semantic-ui.com/elements/segment.html">http://semantic-ui.com/elements/segment.html</a></li>
@@ -528,9 +504,11 @@ Lab-11
 <pre><code>&lt;section class=&quot;ui three column padded stacked grid segment&quot;&gt;</code></pre>
 <p>Type &#39;stacked&#39; in the other segments. Eg. the header:</p>
 <p><img src="img/17.png" alt=""></p>
-</li>
-        
-          <li> <h1>Strand pages</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="06">
+          <h1>Strand pages</h1>
 <p>Our strand pages are still not rendering correctly:</p>
 <p><img src="img/18.png" alt=""></p>
 <p>The images are not sized correctly, and the text is not flowing well. This is how we would like it to look:</p>
@@ -598,9 +576,11 @@ Lab-11
 <p>We are using the 16-column grid as defined by semantic. Every time we are specifying <code>eight wide column</code> we are effectively consuming half of the available width. A `sixteen wide column&#39; is then the full width. </p>
 <p>Make sure you can relate the above use of these grid parameters to the actual layout.</p>
 <p>When you get this working - adapt all of the strand pages to follow a similar model.</p>
-</li>
-        
-          <li> <h1>Banner</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="07">
+          <h1>Banner</h1>
 <p>Currently the banner/summary section needs some attention:</p>
 <p><img src="img/20.png" alt=""></p>
 <p>The text is not really legible - and is too wide to read. This is what we would like to have:</p>
@@ -646,9 +626,11 @@ Lab-11
 &lt;/section&gt;</code></pre>
 <p>We have wrapped the <code>&lt;article&gt;</code> in a grid section, and set the article to be <code>seven wide</code>. Remember, the grid has a notional 16 columns, so this width is less than half of the screen. The page should look like this now:</p>
 <p><img src="img/22.png" alt=""></p>
-</li>
-        
-          <li> <h1>Responsive Grids</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="08">
+          <h1>Responsive Grids</h1>
 <p>Try narrowing making the browser very narrow - like this:</p>
 <p><img src="img/23.png" alt=""></p>
 <p>... and this:</p>
@@ -670,9 +652,11 @@ Lab-11
 <p><img src="img/26.png" alt="">
 <img src="img/27.png" alt=""></p>
 <p>Try this now and make sure your site is responding as above on small screen sizes.</p>
-</li>
-        
-          <li> <h1>Layout</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="09">
+          <h1>Layout</h1>
 <p>The _layout.ejs file in strands offer us another major opportunity to improve a large part of the site by just editing a single file. First, browse the strand pages using a small width browser - the pages will look like this:</p>
 <p><img src="img/28.png" alt=""></p>
 <p>If we make one small change in _layout.ejs - making the main section <code>stackable</code>:</p>
@@ -689,9 +673,11 @@ Lab-11
 <p><img src="img/29.png" alt="">
 <img src="img/30.png" alt=""></p>
 <p>This demonstrates a major benefit of using shared layouts - incremental improvements in the layout are immediately available on all dependent pages.</p>
-</li>
-        
-          <li> <h1>Loading Semantic-UI</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="10">
+          <h1>Loading Semantic-UI</h1>
 <p>Currently, we have downloaded a copy of the Semantic-UI framework and stored it on our <code>assets</code> folder:</p>
 <pre><code>iot-web-ejs
 ├── harp.json
@@ -730,9 +716,11 @@ Lab-11
 &lt;script type=&quot;text/javascript&quot; src=&quot;http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js&quot;&gt;&lt;/script&gt;</code></pre>
 <p>Verify that the site works as before.</p>
-</li>
-        
-          <li> <h1>Solution</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="Exercises">
+          <h1>Solution</h1>
 <p>This is an archive of the completed project:</p>
 <ul>
 <li><a href="https://github.com/wit-computing/iot-web-ejs/releases/tag/V16">https://github.com/wit-computing/iot-web-ejs/releases/tag/V16</a></li>
@@ -745,26 +733,67 @@ Lab-11
 <li><a href="http://harpjs.com/recipes/templating-dynamic-selected-menu-item">http://harpjs.com/recipes/templating-dynamic-selected-menu-item</a></li>
 </ul>
 <p>See if you can figure out how to support this in your project.</p>
-</li>
-        
-      </ul>
-    </div>
 
-    <script>
-      $(document).ready(function() {
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+  $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
   const $images = $('.lab img');
   jQuery.each($images, function(i) {
     if ($images[i].alt.length > 0) {
-      const divImg = $(document.createElement('div')).addClass('');
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
-      $(divLabel).insertAfter($images[i]);
-      $('<br>').insertAfter($images[i]);
+      $(divLabel).insertBefore($images[i]);
     }
   });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
-    </script>
-  </body>
+</script>
+</body>
 </html>

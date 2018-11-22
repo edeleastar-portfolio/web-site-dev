@@ -1,23 +1,27 @@
-
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"/>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
+        type="text/css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+        rel="stylesheet"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <style>
     
 
@@ -63,186 +67,146 @@ h3 {
 
 
   </style>
+</head>
 
-  <body class="lab">
+<body>
 
+
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
     
-  <div class="uk-offcanvas-content">
-    <div id="offcanvas-usage" uk-offcanvas>
-      <div class="uk-offcanvas-bar">
-        <button class="uk-offcanvas-close" type="button" uk-close></button>
-        <ul class="uk-nav">
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic01/book-a/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-00
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic01/book-b/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-01
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic02/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-02
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic03/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-03
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic04/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-04
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic05/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-05
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic06/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-06
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic07/book-a/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-07-a
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic07/book-b/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-07-b
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic08/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-08
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic09/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-09
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic10/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-10
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/web-site-dev//topic11/book-a/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-11
-                </a>
-              </li>
-            
-          
-        </ul>
-      </div>
-    </div>
+      <a href="../index.html"> Layout + Review  </a>
+    
+  </header>
+  <div class="right tab-menu menu">
+    
+      <a class="item" data-tab="Lab-07-b">
+        Lab-07-b
+      </a>
+    
+      <a class="item" data-tab="01">
+        01
+      </a>
+    
+      <a class="item" data-tab="02">
+        02
+      </a>
+    
+      <a class="item" data-tab="03">
+        03
+      </a>
+    
+      <a class="item" data-tab="04">
+        04
+      </a>
+    
+      <a class="item" data-tab="05">
+        05
+      </a>
+    
+      <a class="item" data-tab="06">
+        06
+      </a>
+    
+      <a class="item" data-tab="07">
+        07
+      </a>
+    
+      <a class="item" data-tab="08">
+        08
+      </a>
+    
+      <a class="item" data-tab="archives">
+        archives
+      </a>
+    
   </div>
+</div>
 
-
-    <div uk-sticky>
-      <nav class="uk-navbar">
-        <div class="uk-navbar-left">
-          <ul class="uk-subnav uk-background-secondary uk-subnav-pill">
-            <li><a href="#offcanvas-usage" uk-icon="icon: menu" , uk-toggle title="Switch Lab" pos="bottom"
-                   uk-tooltip></a></li>
-            <li class="uk-active"><a href="../index.html" uk-icon="icon: chevron-up" uk-toggle title="Parent Topic"
-                                     pos="bottom" uk-tooltip>Layout + Review </a></li>
-          </ul>
-        </div>
-        <div class="uk-navbar-right">
-          <ul class="uk-subnav uk-background-secondary uk-subnav-pill"
-              uk-switcher="connect: .switcher-container">
-            
-              <li><a href="#">Lab-07-b</a></li>
-            
-              <li><a href="#">01</a></li>
-            
-              <li><a href="#">02</a></li>
-            
-              <li><a href="#">03</a></li>
-            
-              <li><a href="#">04</a></li>
-            
-              <li><a href="#">05</a></li>
-            
-              <li><a href="#">06</a></li>
-            
-              <li><a href="#">07</a></li>
-            
-              <li><a href="#">08</a></li>
-            
-              <li><a href="#">archives</a></li>
-            
-          </ul>
-        </div>
-      </nav>
-    </div>
-
-    <div class="uk-container uk-container-expand">
-      <ul class="uk-switcher switcher-container">
-        
-          <li> <h1>Objectives</h1>
+<div class="ui pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    <br><br>
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic01/book-a/index.html">Lab-00 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic01/book-b/index.html">Lab-01 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic02/book/index.html">Lab-02 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic03/book/index.html">Lab-03 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic04/book/index.html">Lab-04 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic05/book/index.html">Lab-05 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic06/book/index.html">Lab-06 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic07/book-a/index.html">Lab-07-a </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic07/book-b/index.html">Lab-07-b </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic08/book/index.html">Lab-08 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic09/book/index.html">Lab-09 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic10/book/index.html">Lab-10 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/web-site-dev//topic11/book-a/index.html">Lab-11 </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment">
+      <br>
+      
+        <div class="ui tab segment lab" data-tab="Lab-07-b">
+          <h1>Objectives</h1>
 <p>Review CSS fundamentals Layout fundamentals via a series of discreet experiments. Each experiment is in a separate html/css file and explores important rules associated with the box model, layout and positioning via simple, concrete examples. Some of the material is drawn from the excellent <code>http://learnlayout.com</code> resource.</p>
-</li>
-        
-          <li> <h2>Lab Setup up</h2>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="01">
+          <h2>Lab Setup up</h2>
 <p>For all of the steps in this lab, you will use the following project:</p>
 <ul>
 <li><a href="archives/learn-css-layout-2-starter.zip">learn-css-layout-2-starter.zip</a></li>
@@ -268,9 +232,11 @@ Lab-11
 }</code></pre>
 <p>Now save and refresh the browser page. The border now contains the image completely. </p>
 <p><img src="./img/02.png" alt=""></p>
-</li>
-        
-          <li> <h1>float layout example</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="02">
+          <h1>float layout example</h1>
 <p>It is common to do entire layouts using float. Here is the same layout we did last week using position, but this time we use float.</p>
 <p>Open the 12.float-layout-example folder.</p>
 <p>In the index.html file you have a <code>&lt;nav</code>&gt; element and two <code>&lt;section</code>&gt; elements.</p>
@@ -290,9 +256,11 @@ section {
   overflow: auto;
 }</code></pre>
 <p>We include the .clearfix here just to ensure that if the nav ever increased to be longer than the sections, or if the sections shrunk to be smaller than the nav that it would not overflow its container (because it is floated left).</p>
-</li>
-        
-          <li> <h1>percent width</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="03">
+          <h1>percent width</h1>
 <p>For the following experiments use the files in 13.percent-width folder</p>
 <p>Percent is a measurement unit relative to the containing block. It&#39;s great for images: here we can make the image that it is always 50% the width of its container. </p>
 <p>Edit the style.css file and add the following:</p>
@@ -318,9 +286,11 @@ section {
   border: solid 1px;
 }</code></pre>
 <p>In this example, the nav content starts to degrade in how it looks when the window is too narrow. It comes down to what works for your content.</p>
-</li>
-        
-          <li> <h1>media queries</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="04">
+          <h1>media queries</h1>
 <p>For the following experiments use the files in 14.media-queries folder</p>
 <p>Ideally you want your web development to be &quot;Responsive&quot; so that it resonds to changes in the device it is viewd on. It should look good no matter what.</p>
 <p>Media queries are the most powerful tool for doing this. Let&#39;s take the layout that uses percent widths and have it display in one column when the browser is too small to fit the menu in the sidebar.</p>
@@ -357,9 +327,11 @@ section {
 <ul>
 <li><a href="https://dev.opera.com/articles/an-introduction-to-meta-viewport-and-viewport/">https://dev.opera.com/articles/an-introduction-to-meta-viewport-and-viewport/</a></li>
 </ul>
-</li>
-        
-          <li> <h1>inline-block</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="05">
+          <h1>inline-block</h1>
 <p>For the following experiments use the files in 15.inline-block folder</p>
 <p>You can create a grid of boxes that fills the browser and wraps nicely. This has been possible for a long time using float. But now with inline-block it&#39;s even easier. inline-block elements are like inline elements but they can have a width and height.</p>
 <p>This is the hard way of doing it (using float). 
@@ -392,9 +364,11 @@ Replace the previous rules with the following rules:</p>
   border: solid 1px;
 }</code></pre>
 <p>Save and refresh the page. Some older browsers do give trouble in their support of inline-block.</p>
-</li>
-        
-          <li> <h1>inline-block layout</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="06">
+          <h1>inline-block layout</h1>
 <p>For the following experiments use the files in 16.inline-block-layout folder</p>
 <p>You can use inline-block for layouts (as opposed to position or float).</p>
 <p>There are things to keep in mind:</p>
@@ -415,9 +389,11 @@ Replace the previous rules with the following rules:</p>
   width: 74%;
 }</code></pre>
 <p>This will display the navigation to the left taking up 25% of the body, and the column will display to the right taking up 74% of the body. (The other 1% is taken up in default padding for inline-blocks)</p>
-</li>
-        
-          <li> <h1>column</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="07">
+          <h1>column</h1>
 <p>For the following experiments use the files in 17.column folder</p>
 <p>There is a new set of CSS properties that let you easily make multi-column text.
 View the index.html page in the browser to see its current format.</p>
@@ -437,9 +413,11 @@ View the index.html page in the browser to see its current format.</p>
 <ul>
 <li><a href="http://quirksmode.org/css/columns/">http://quirksmode.org/css/columns/</a></li>
 </ul>
-</li>
-        
-          <li> <h1>flexbox</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="08">
+          <h1>flexbox</h1>
 <p>The new Flexbox layout mode is set to redefine how we do layouts in CSS. Unfortunately the specification has changed a lot recently, so it&#39;s implemented differently in different browsers. Still, these are examples that currently work in some browsers
  - <a href="http://caniuse.com/#feat=flexbox">http://caniuse.com/#feat=flexbox</a>
  that use the latest version of the standard.</p>
@@ -503,9 +481,11 @@ The outer div is the container and then each subsequent div is a member of each 
     justify-content: center;
 }</code></pre>
 <p>Open the centering.html file and ensure the div is a member of the vertical-container class. Save and load the page.</p>
-</li>
-        
-          <li> <h1>Solution</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="archives">
+          <h1>Solution</h1>
 <p>Here is an archive of the completed lab:</p>
 <ul>
 <li><a href="archives/learn-css-layout-2-complete.zip">learn-css-layout-2-complete.zip</a></li>
@@ -514,26 +494,67 @@ The outer div is the container and then each subsequent div is a member of each 
 <ul>
 <li><a href="archives/index.html">learn-css-layout-2-complete</a></li>
 </ul>
-</li>
-        
-      </ul>
-    </div>
 
-    <script>
-      $(document).ready(function() {
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+  $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
   const $images = $('.lab img');
   jQuery.each($images, function(i) {
     if ($images[i].alt.length > 0) {
-      const divImg = $(document.createElement('div')).addClass('');
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
-      $(divLabel).insertAfter($images[i]);
-      $('<br>').insertAfter($images[i]);
+      $(divLabel).insertBefore($images[i]);
     }
   });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
-    </script>
-  </body>
+</script>
+</body>
 </html>
